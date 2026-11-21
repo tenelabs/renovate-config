@@ -97,12 +97,6 @@
       "addLabels": ["{{updateType}}"]
     },
     {
-      "description": "Group Prettier packages",
-      "matchPackagePatterns": ["^prettier", "^@prettier/"],
-      "groupName": "prettier",
-      "addLabels": ["prettier"]
-    },
-    {
       "description": "Never automerge major GitHub Actions updates",
       "matchManagers": ["github-actions"],
       "matchUpdateTypes": ["major"],
@@ -130,6 +124,18 @@
       "matchDepNames": ["node"],
       "matchDepTypes": ["engines", "uses-with"],
       "enabled": false
+    },
+    {
+      "description": "Group Prettier packages",
+      "matchPackagePatterns": ["^prettier", "^@prettier/"],
+      "groupName": "prettier",
+      "addLabels": ["prettier"]
+    },
+    {
+      "description": "Group Pegora packages",
+      "matchPackagePatterns": ["^pegora", "^@pegora/"],
+      "groupName": "pegora",
+      "addLabels": ["pegora"]
     }
   ]
 }
