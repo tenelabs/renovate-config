@@ -15,6 +15,7 @@
     ":disableRateLimiting",
     "helpers:pinGitHubActionDigests",
     ":configMigration",
+    ":disablePeerDependencies",
     "abandonments:recommended",
     "workarounds:all",
     "group:definitelyTyped",
@@ -127,7 +128,7 @@
     {
       "description": "Do not update manually managed Node version constraints",
       "matchDepNames": ["node"],
-      "matchDepTypes": ["peerDependencies", "engines", "uses-with"],
+      "matchDepTypes": ["engines", "uses-with"],
       "enabled": false
     }
   ]
