@@ -127,7 +127,7 @@
     {
       "description": "Do not update manually managed Node version constraints",
       "matchDepNames": ["node"],
-      "matchDepTypes": ["peerDependencies", "engines"],
+      "matchDepTypes": ["peerDependencies", "engines", "uses-with"],
       "enabled": false
     }
   ]
